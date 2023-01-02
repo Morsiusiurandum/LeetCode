@@ -1,4 +1,4 @@
-#include "leetcode/editor/en/[4]Median of Two Sorted Arrays.cpp"
+#include "leetcode/editor/en/[27]Remove Element.cpp"
 
 using namespace std;
 
@@ -6,10 +6,11 @@ int main()
 {
     Solution solution;
     //Test
-    vector<int> a,b;
-    a.push_back(1);
+    vector<int> a;
     a.push_back(3);
-    b.push_back(2);
-    cout << solution.findMedianSortedArrays(a,b);
+    a.push_back(2);
+    a.push_back(2);
+    a.push_back(3);
+    cout << solution.removeElement();
     return 0;
 }
