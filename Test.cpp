@@ -1,4 +1,4 @@
-#include "leetcode/editor/en/[27]Remove Element.cpp"
+#include "leetcode/editor/en/[1061]Lexicographically Smallest Equivalent String.cpp"
 
 using namespace std;
 
@@ -6,11 +6,8 @@ int main()
 {
     Solution solution;
     //Test
-    vector<int> a;
-    a.push_back(3);
-    a.push_back(2);
-    a.push_back(2);
-    a.push_back(3);
-    cout << solution.removeElement();
+    cout << solution.smallestEquivalentString("leetcode",
+                                              "programs",
+                                              "sourcecode");
     return 0;
 }
