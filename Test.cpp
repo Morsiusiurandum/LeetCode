@@ -1,13 +1,14 @@
-#include "leetcode/editor/en/[1061]Lexicographically Smallest Equivalent String.cpp"
+#include <iostream>
+#include "leetcode/editor/en/[63]Unique Paths II.cpp"
 
 using namespace std;
 
 int main()
 {
-    Solution solution;
+    vector<vector<int>> vec{{0, 0},
+                            {1, 1},
+                            {0, 0}};
     //Test
-    cout << solution.smallestEquivalentString("leetcode",
-                                              "programs",
-                                              "sourcecode");
+    cout << Solution::uniquePathsWithObstacles(vec);
     return 0;
 }
