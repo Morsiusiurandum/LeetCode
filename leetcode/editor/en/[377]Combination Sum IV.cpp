@@ -51,7 +51,7 @@ using namespace std;
 // leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
 public:
-  [[maybe_unused]] int combinationSum4(vector<int> &nums, int target) {
+  [[maybe_unused]] static int combinationSum4(vector<int> &nums, int target) {
     vector<unsigned int> dp(target + 1, 0);
     dp[0] = 1;
 
@@ -62,7 +62,7 @@ public:
       }
     }
 
-    return dp[target];
+    return (int)dp[target];
   }
 };
 // leetcode submit region end(Prohibit modification and deletion)
