@@ -37,8 +37,6 @@ Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
 
 */
 #include <vector>
-#include <iostream>
-#include <string>
 
 using namespace std;
 
@@ -46,7 +44,7 @@ using namespace std;
 class Solution
 {
 public:
-    double findMedianSortedArrays(vector<int> &nums1, vector<int> &nums2)
+    [[maybe_unused]] double findMedianSortedArrays(vector<int> &nums1, vector<int> &nums2)
     {
         int target = (int) (nums1.size() + nums2.size()) / 2;
         int tag = (int) (nums1.size() + nums2.size()) % 2;
